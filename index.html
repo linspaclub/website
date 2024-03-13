@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="/static/css/extension.css">
     <script src="/static/js/mdui.global.js"></script>
     <script src="/static/js/extension.js"></script>
+    <style>
+        .tap {
+            max-width: 800px;
+            margin: auto;
+            padding: 24px;
+        }
+    </style>
 
     <title>临界社</title>
     <link rel="icon" href="/static/image/favicon.ico">
@@ -18,7 +25,23 @@
 
 <body>
 
+    <mdui-top-app-bar>
+        <mdui-button-icon icon="menu"></mdui-button-icon>
+        <div style="flex-grow: 1"></div>
+        <mdui-button-icon icon="more_vert"></mdui-button-icon>
+    </mdui-top-app-bar>
 
+    <div class="mdui-prose tap">
+        <h3>你好！这里是临界社。</h3>
+        <p>官网目前还没有开始施工，暂时先这样啦。以下是碎碎念：</p>
+        <p>知识共享计划的资料目前暂时使用临界社的云盘（ 临界云盘 ）来分享，由于服务器架设在新加坡，网速慢，还请不要一次性把所有资料下载哦～按需下载即可。</p>
+        <p>云盘服务免费对外开放，去副社长那里登记申请即可，只是容量实在有限，抱歉哦。</p>
+        <p>临界社也提供邮箱服务，邮箱格式为 ___@lspc.top ，需要使用的向副社长登记申请即可。</p>
+        <p>知识共享计划将在以后设立一个单独的平台 —— 临界学术，在这里大家可以提问分享一起学习。</p>
+        <p>Coplis 是一位基于 GPT3.5-Turbo 的学习助手，目前还在公测阶段，以后大家可以在临界学术上体验。</p>
+        <mdui-button onclick="window.open('https://cloud.lspc.top')">传送到临界云盘</mdui-button>
+        <mdui-button onclick="window.open('https://cloud.lspc.top')">知识共享计划（ 维护中 ）</mdui-button>
+    </div>
 
 </body>
 
